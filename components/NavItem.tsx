@@ -40,7 +40,7 @@ const NavItem = ({ isAnyOpen, category, handleOpen, isOpen }: NavItemProps) => {
           )}
         >
           <div
-            className="absolute inset-0 top-1/2 bg-white shadow"
+            className="absolute inset-0 top-1/2 bg-white shadow-xl"
             aria-hidden="true"
           />
           <div className="relative bg-white">
@@ -57,8 +57,8 @@ const NavItem = ({ isAnyOpen, category, handleOpen, isOpen }: NavItemProps) => {
                           className="object-cover object-center"
                         />
                       </div>
-                      <Link href={item.href} className="mt-6 block font-medium text-gray-900">{item.name}</Link>
-                      <p className="mt-1">Shop now</p>
+                      <Link href={item.href} className="mt-6 block font-medium text-gray-900 group-hover:opacity-75">{item.name}</Link>
+                      <p className="mt-1 group-hover:opacity-75">Shop now</p>
                     </div>
                   ))}
                 </div>
